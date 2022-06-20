@@ -177,12 +177,6 @@
         <a href="#" class="close">Close</a>
     </div>
 
-    <!-- #section6 레이어 팝업 2 -->
-    <div id="layer2">
-        <img src="assets/img/newpopup02.jpg" alt="contact me">
-        <a href="#" class="close">Close</a>
-    </div>
-
     <!-- mouse cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -212,16 +206,6 @@
         $("#layer1 .close").click(function(e){
             e.preventDefault();
             $("#layer1").css("display","none")
-        });
-
-        // #section6 레이어 팝업 2
-        $(".layer2").click(function(e){
-            e.preventDefault();
-            $("#layer2").css("display","block")
-        });
-        $("#layer2 .close").click(function(e){
-            e.preventDefault();
-            $("#layer2").css("display","none")
         });
 
         // mouse cursor
@@ -260,12 +244,6 @@
             }
             if(wScroll >= $("#section4").offset().top - $(window).height()/2 ){
                 $("#section4").addClass("show");
-            }
-            if(wScroll >= $("#section5").offset().top - $(window).height()/2 ){
-                $("#section5").addClass("show");
-            }
-            if(wScroll >= $("#section6").offset().top - $(window).height()/2 ){
-                $("#section6").addClass("show");
             }
         });
 </script>
